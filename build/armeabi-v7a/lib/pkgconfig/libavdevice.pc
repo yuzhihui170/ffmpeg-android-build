@@ -1,0 +1,14 @@
+prefix=/Users/who/Desktop/upixels/ffmpeg/ffmpeg-android/build/armeabi-v7a
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: libavdevice
+Description: FFmpeg device handling library
+Version: 57.0.102
+Requires: libavfilter >= 6.63.100, libswscale >= 4.1.100, libpostproc >= 54.0.100, libavformat >= 57.50.100, libavcodec >= 57.58.100, libswresample >= 2.1.100, libavutil >= 55.30.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavdevice -lm -lz -pthread
+Libs.private: 
+Cflags: -I${includedir}
